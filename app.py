@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load model
-model_path = r"C:\Users\ACER\OneDrive\Documents\my codess\Data-Analytics-Assignment\Crypto-Liquidity-Prediction-ML-Project\outputs\models\crypto_liquidity_rf_model.pkl"
+model_path = "outputs/models/crypto_liquidity_rf_model.pkl"
 model = joblib.load(model_path)
 
 # Page configuration
