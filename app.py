@@ -2,6 +2,23 @@ import streamlit as st
 import joblib
 import numpy as np
 
+# ==============================
+# Repository Badge
+# ==============================
+st.markdown(
+    """
+    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <a href="https://github.com/avinesh-masih/Crypto-Liquidity-Prediction" target="_blank" style="text-decoration: none;">
+            <span style="display: inline-flex; align-items: center; background: #24292f; color: white; border-radius: 5px; padding: 4px 10px; font-size: 0.95rem;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="18" style="margin-right: 7px; vertical-align: middle;" />
+                Repository
+            </span>
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 # Load model
 model_path = "outputs/models/crypto_liquidity_rf_model.pkl"
 model = joblib.load(model_path)
